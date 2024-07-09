@@ -1,3 +1,4 @@
+name: deploy to github Pages
 on:
   push:
     branches: [main]
@@ -10,11 +11,11 @@ jobs:
       - name: Use node js 18
         uses: actions/setup-node@v4
         with:
-          node-version: 22
+          node-version: 20
       - name: install dependencies
         run: npm install
       - name: build
-        run: npm run build
+        run: npm build
       - name: deploy with gihub pages
         uses: peaceiris/actions-gh-pages@v3
         with:
