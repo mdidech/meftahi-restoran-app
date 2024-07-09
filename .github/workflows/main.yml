@@ -21,5 +21,7 @@ jobs:
           echo "Build completed"
       - name: deploy with gihub pages
         uses: peaceiris/actions-gh-pages@v3
+        with:
+          publish_dir: ./build
         env:
           github_token: ${{ secrets.TOKEN }}
