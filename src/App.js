@@ -16,8 +16,8 @@ function App() {
   };
   return (
     <div>
-      <NavbarResto getValInp={getValInp} />
       <Router basename='/meftahi-restoran-app'>
+        <NavbarResto getValInp={getValInp} />
         <Routes>
           <Route path='/' element={<HomePage />} />
           <Route
