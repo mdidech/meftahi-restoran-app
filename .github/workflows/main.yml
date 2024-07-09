@@ -15,7 +15,10 @@ jobs:
       - name: install dependencies
         run: npm install
       - name: build
-        run: npm run build
+        run: |
+          echo "Building the project..."
+          npm run build
+          echo "Build completed"
       - name: deploy with GitHub Pages
         run: npm run deploy
         env:
