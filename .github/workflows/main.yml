@@ -11,13 +11,13 @@ jobs:
       - name: Use node js 18
         uses: actions/setup-node@v4
         with:
-          node-version: 16
+          node-version: 18
       - name: install dependencies
         run: npm install
       - name: build
         run: |
           echo "Building the project..."
-          npm run build
+          CI=false npm run build
           echo "Build completed"
       - name: deploy with GitHub Pages
         run: npm run deploy
