@@ -15,7 +15,7 @@ jobs:
       - name: install dependencies
         run: npm install
       - name: build
-        run: npm build
+        run: npm deploy
       - name: deploy with gihub pages
         uses: peaceiris/actions-gh-pages@v3
         with:
