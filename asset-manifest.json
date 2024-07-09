@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/meftahi-restoran-app/static/css/main.8de0f416.css",
-    "main.js": "/meftahi-restoran-app/static/js/main.7263d2ad.js",
+    "main.js": "/meftahi-restoran-app/static/js/main.ccd77378.js",
     "index.html": "/meftahi-restoran-app/index.html",
     "main.8de0f416.css.map": "/meftahi-restoran-app/static/css/main.8de0f416.css.map",
-    "main.7263d2ad.js.map": "/meftahi-restoran-app/static/js/main.7263d2ad.js.map"
+    "main.ccd77378.js.map": "/meftahi-restoran-app/static/js/main.ccd77378.js.map"
   },
   "entrypoints": [
     "static/css/main.8de0f416.css",
-    "static/js/main.7263d2ad.js"
+    "static/js/main.ccd77378.js"
   ]
 }
