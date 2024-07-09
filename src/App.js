@@ -9,30 +9,30 @@ import UpdateRepasPage from './pages/UpdateRepasPage';
 import { useState } from 'react';
 import About from './pages/About';
 
-
-
-
 function App() {
-  const [valSearch  , setValSearch] = useState("")
-  const getValInp = (val)=>{
-  setValSearch(val)
-    
-  }
+  const [valSearch, setValSearch] = useState('');
+  const getValInp = (val) => {
+    setValSearch(val);
+  };
   return (
-      <div>
-        <NavbarResto getValInp={getValInp}   />
-        <Router>
+    <div>
+      <NavbarResto getValInp={getValInp} />
+      <Router basename='/meftahi-restoran-app'>
         <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path='/allRepas' element={<AllRepasPage getValInp={getValInp}  valSearch={valSearch}/>}/>
-          <Route path='/addRepas' element={<AddRepasPage/>}/>
-          <Route path='/repas/:id' element={<GetOneRepas/>}/>
-          <Route path='/update_repas/:id' element={<UpdateRepasPage/>}/>
-          <Route path='/About' element={<About/>}/>
+          <Route path='/' element={<HomePage />} />
+          <Route
+            path='/allRepas'
+            element={
+              <AllRepasPage getValInp={getValInp} valSearch={valSearch} />
+            }
+          />
+          <Route path='/addRepas' element={<AddRepasPage />} />
+          <Route path='/repas/:id' element={<GetOneRepas />} />
+          <Route path='/update_repas/:id' element={<UpdateRepasPage />} />
+          <Route path='/About' element={<About />} />
         </Routes>
-        </Router>
-        
-      </div>
+      </Router>
+    </div>
   );
 }
 
