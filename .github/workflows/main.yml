@@ -1,8 +1,6 @@
-name: deploy to GitHub Pages
 on:
   push:
     branches: [main]
-
 
 jobs:
   deploy:
