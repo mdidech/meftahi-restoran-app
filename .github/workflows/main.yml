@@ -13,9 +13,10 @@ jobs:
           node-version: 22
       - name: install dependencies
         run: npm install
-      - name: Deploy to production
+      - name: build
         run: npm run build
       - name: deploy with gihub pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           publish_dir: ./build
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
